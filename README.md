@@ -14,7 +14,9 @@ AI_assisted_dev/
 │   │   └── SKILL.md               # 技能说明文档
 │   ├── git-commit-cream/           # Git 提交信息生成助手
 │   │   └── SKILL.md               # 技能说明文档
-│   └── 多彩输出/                   # 多彩输出技能
+│   ├── 多彩输出/                   # 多彩输出技能
+│   │   └── SKILL.md               # 技能说明文档
+│   └── requirement2code/           # 全流程开发专家
 │       └── SKILL.md               # 技能说明文档
 └── README.md
 ```
@@ -58,6 +60,18 @@ AI_assisted_dev/
 
 **查看详情：** [skills/多彩输出/SKILL.md](skills/多彩输出/SKILL.md)
 
+### Requirement2Code (全流程开发专家)
+
+整合需求分析、架构设计、任务规划和代码实现四个阶段，从模糊需求直接交付高质量代码。
+
+**功能：**
+- 🔄 全流程覆盖：需求 -> 架构 -> 任务 -> 代码，端到端交付
+- 📑 标准化文档：自动生成 `REQUIREMENT.md`、`DESIGN.md` 和 `TODO.md`
+- 🤖 角色扮演：自动切换分析师、架构师、规划师和执行者角色
+- ⚙️ 灵活模式：支持“分步确认模式”（复杂项目）和“自动流模式”（快速原型）
+
+**查看详情：** [skills/requirement2code/SKILL.md](skills/requirement2code/SKILL.md)
+
 ## 🚀 快速开始
 
 每个技能目录包含独立的使用说明，请查看对应的 `SKILL.md` 文件。
@@ -85,6 +99,7 @@ python skills/flutter-color-organizer/scripts/normalize_colors.py
 | flutter-color-organizer | Flutter 颜色管理工具 | Flutter 项目颜色整理和规范化 |
 | git-commit-cream | Git 提交信息生成助手 | 自动生成中文 Commit Message，智能忽略移动端构建文件 |
 | 多彩输出 | 智能颜色排版 | 提升 AI 回复的可读性和重点识别效率 |
+| requirement2code | 全流程开发专家 | 从模糊需求到代码实现的端到端标准化开发流程 |
 
 ## 🤝 贡献
 
