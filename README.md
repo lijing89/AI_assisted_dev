@@ -12,7 +12,9 @@ AI_assisted_dev/
 │   │   │   ├── scan_colors.py     # 扫描项目中的颜色使用
 │   │   │   └── normalize_colors.py # 规范化颜色定义
 │   │   └── SKILL.md               # 技能说明文档
-│   └── git-commit-cream/           # Git 提交信息生成助手
+│   ├── git-commit-cream/           # Git 提交信息生成助手
+│   │   └── SKILL.md               # 技能说明文档
+│   └── 多彩输出/                   # 多彩输出技能
 │       └── SKILL.md               # 技能说明文档
 └── README.md
 ```
@@ -44,6 +46,18 @@ AI_assisted_dev/
 
 **查看详情：** [skills/git-commit-cream/SKILL.md](skills/git-commit-cream/SKILL.md)
 
+### 多彩输出
+
+用多种颜色来包装 AI 回复的内容，通过颜色来区分内容的重要度，一眼就知道回复的关键点在哪里。
+
+**功能：**
+- 🎨 视觉增强：使用不同颜色区分信息类型（红、绿、蓝、粉、黄）
+- 🎯 重点突出：自动高亮关键信息、警告、成功提示等
+- 💬 自然触发：支持 "请用多彩颜色回复"、"多彩输出" 等自然语言触发
+- 🚀 无需脚本：基于 Prompt 模板直接生效
+
+**查看详情：** [skills/多彩输出/SKILL.md](skills/多彩输出/SKILL.md)
+
 ## 🚀 快速开始
 
 每个技能目录包含独立的使用说明，请查看对应的 `SKILL.md` 文件。
@@ -70,6 +84,7 @@ python skills/flutter-color-organizer/scripts/normalize_colors.py
 |---------|------|---------|
 | flutter-color-organizer | Flutter 颜色管理工具 | Flutter 项目颜色整理和规范化 |
 | git-commit-cream | Git 提交信息生成助手 | 自动生成中文 Commit Message，智能忽略移动端构建文件 |
+| 多彩输出 | 智能颜色排版 | 提升 AI 回复的可读性和重点识别效率 |
 
 ## 🤝 贡献
 
