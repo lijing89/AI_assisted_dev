@@ -18,6 +18,8 @@ AI_assisted_dev/
 │   │   └── SKILL.md               # 技能说明文档
 │   ├── log-standardizer/           # 日志标准化工具
 │   │   └── SKILL.md               # 技能说明文档
+│   ├── timer-stream-dispose/       # Timer/StreamSubscription 内存泄漏修复
+│   │   └── SKILL.md               # 技能说明文档
 │   ├── 多彩输出/                   # 多彩输出技能
 │   │   └── SKILL.md               # 技能说明文档
 │   └── requirement2code/           # 全流程开发专家
@@ -76,6 +78,18 @@ AI_assisted_dev/
 
 **查看详情：** [skills/log-standardizer/SKILL.md](skills/log-standardizer/SKILL.md)
 
+### Timer/StreamSubscription Dispose (内存泄漏修复)
+
+检查并修复 Dart/Flutter 项目中 Timer 与 StreamSubscription 的内存泄漏问题，确保在组件/控制器销毁时正确释放资源。
+
+**功能：**
+- 🔍 泄漏检测：定位项目中所有 `Timer`、`Timer.periodic` 和 `StreamSubscription` 使用点
+- 🛡️ 规范修复：在 `dispose()`/`onClose()` 中统一调用 `.cancel()` 释放资源
+- 📋 生命周期管理：针对 StatefulWidget、GetxController 等不同场景提供标准模式
+- ✅ 防崩溃：避免对象销毁后定时器/订阅仍在运行导致的内存泄漏或崩溃
+
+**查看详情：** [skills/timer-stream-dispose/SKILL.md](skills/timer-stream-dispose/SKILL.md)
+
 ### 多彩输出
 
 用多种颜色来包装 AI 回复的内容，通过颜色来区分内容的重要度，一眼就知道回复的关键点在哪里。
@@ -128,6 +142,7 @@ python skills/flutter-color-organizer/scripts/normalize_colors.py
 | flutter-color-organizer | Flutter 颜色管理工具 | Flutter 项目颜色整理和规范化 |
 | git-commit-cream | Git 提交信息生成助手 | 自动生成中文 Commit Message，智能忽略移动端构建文件 |
 | log-standardizer | 日志标准化工具 | 统一替换 print/debugPrint 为 LogUtil，规范日志管理 |
+| timer-stream-dispose | Timer/StreamSubscription 内存泄漏修复 | 检查修复 Timer 和 StreamSubscription 未释放导致的内存泄漏 |
 | 多彩输出 | 智能颜色排版 | 提升 AI 回复的可读性和重点识别效率 |
 | requirement2code | 全流程开发专家 | 从模糊需求到代码实现的端到端标准化开发流程 |
 
